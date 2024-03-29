@@ -6,7 +6,9 @@ import {
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
-import deved from "../public/dev-ed-wave.png";
+// import deved from "../public/dev-ed-wave.png";
+import profile from "../public/profile.png";
+import navLogo from "../public/nav-logo.png";
 import code from "../public/code.png";
 import design from "../public/design.png";
 import consulting from "../public/consulting.png";
@@ -30,8 +32,11 @@ export default function Home() {
       </Head>
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 className="font-burtons text-xl">developedbyed</h1>
+          <nav className="py-10 mb-20 flex justify-between dark:text-white">
+            <h1 className="font-burtons text-xl">HarisMI</h1>
+            {/* <div className="w-20 h-20 bg-red-200" style={{width : "200px"}}>
+            <Image src={navLogo} layout="fill" objectFit="cover" />
+            </div> */}
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -41,7 +46,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
+                  className="bg-gradient-to-r from-sky-500 to-blue-800 text-white px-4 py-2 border-none rounded-md ml-8"
                   href="#"
                 >
                   Resume
@@ -49,28 +54,27 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="text-center p-10 py-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
-              Dimitri Marco
+          <div className="text-center p-10 py-2">
+            <h2 className="text-5xl font-bold py-2 text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-blue-800">
+              HARIS MAULANA IKHSAN
             </h2>
-            <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
-              Developer and designer.
-            </h3>
+            {/* <h3 className="text-2xl py-5 dark:text-white md:text-3xl">
+              Teacher and Freelancer
+            </h3> */}
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              Freelancer providing services for programming and design content
-              needs. Join me down below and let's get cracking!
+              Saya seorang pengajar yang juga membantu institusi dalam menyelesaikan masalah melalui pembuatan aplikasi.
             </p>
-            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
+            {/* <div className="text-5xl flex justify-center gap-16 pt-5 text-gray-600 dark:text-gray-400">
               <AiFillTwitterCircle />
               <AiFillLinkedin />
               <AiFillYoutube />
-            </div>
-            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
-              <Image src={deved} layout="fill" objectFit="cover" />
+            </div> */}
+            <div className="mx-auto bg-gradient-to-b from-sky-500 rounded-full w-80 h-80 relative overflow-hidden mt-8 md:h-76 md:w-76">
+              <Image src={profile} layout="fill" objectFit="cover" />
             </div>
           </div>
         </section>
-        <section>
+        {/* <section>
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Services I offer</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
@@ -131,7 +135,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">Indesign</p>
             </div>
           </div>
-        </section>
+        </section> */}
         <section className="py-10">
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
